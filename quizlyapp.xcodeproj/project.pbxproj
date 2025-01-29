@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		735ADB802D4A8D6500D1B1B8 /* README.MD in Resources */ = {isa = PBXBuildFile; fileRef = 735ADB7F2D4A8D5C00D1B1B8 /* README.MD */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		735ADB622D4A8AD200D1B1B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		735ADB4B2D4A8ACF00D1B1B8 /* quizlyapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizlyapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		735ADB612D4A8AD200D1B1B8 /* quizlyappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quizlyappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		735ADB6B2D4A8AD200D1B1B8 /* quizlyappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quizlyappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		735ADB7F2D4A8D5C00D1B1B8 /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -92,6 +97,7 @@
 				735ADB642D4A8AD200D1B1B8 /* quizlyappTests */,
 				735ADB6E2D4A8AD200D1B1B8 /* quizlyappUITests */,
 				735ADB4C2D4A8ACF00D1B1B8 /* Products */,
+				735ADB7F2D4A8D5C00D1B1B8 /* README.MD */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735ADB802D4A8D6500D1B1B8 /* README.MD in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
