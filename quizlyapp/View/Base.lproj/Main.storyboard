@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="quizlyapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainBg" translatesAutoresizingMaskIntoConstraints="NO" id="aJF-Hn-GJZ">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Quizly!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niX-id-3No">
+                                <rect key="frame" x="28.666666666666657" y="47" width="333" height="40.333333333333343"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="H9t-uw-nzV" userLabel="CategoryButtons">
+                                <rect key="frame" x="85" y="317" width="220" height="210"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxT-DG-OHF">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="H2o-WW-wuW"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.65098041299999998" green="0.13352060269999999" blue="0.44331365630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="History">
+                                            <fontDescription key="titleFontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="categoryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ixt-Ga-Z3X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn1-W3-Uhw">
+                                        <rect key="frame" x="0.0" y="75" width="220" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="StU-HD-IRT"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.48980266630000002" green="0.084734348720000005" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sports">
+                                            <fontDescription key="titleFontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="categoryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LCW-xf-1kM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGq-wF-ybe">
+                                        <rect key="frame" x="0.0" y="150" width="220" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="zH8-eU-6fG"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.48980266630000002" green="0.084734348720000005" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="General">
+                                            <fontDescription key="titleFontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="categoryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GKU-tl-nAD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="k1a-f7-D90"/>
+                                </constraints>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="d24-na-h6r" userLabel="AnswerButtons">
+                                <rect key="frame" x="45" y="750" width="300" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZw-DC-XmU">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="fI6-lF-qs6"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.25887731971326972" green="0.25876404626819682" blue="0.62892597853535359" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="True" cornerStyle="large">
+                                            <fontDescription key="titleFontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cP-d1-lHq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNt-Z5-uDK">
+                                        <rect key="frame" x="157" y="0.0" width="143" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="sTc-aq-3Wc"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.26247887137055886" green="0.50549515126452227" blue="0.57629024621212122" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="False" cornerStyle="large">
+                                            <fontDescription key="titleFontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UAT-FQ-JeJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="gEp-54-j1v"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press a category to start!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IC-m0-EFZ">
+                                <rect key="frame" x="73.333333333333329" y="88" width="243.33333333333337" height="22"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where the question text will go fda fds f fda fds" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpO-tY-QMN">
+                                <rect key="frame" x="45" y="127" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="3mD-gI-NbZ"/>
+                                    <constraint firstAttribute="height" constant="150" id="wnS-C3-TZH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <lineBreakStrategy key="lineBreakStrategy"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.37011646205059684" green="0.19542760364199557" blue="0.48970170454545459" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="H9t-uw-nzV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="06g-x3-diC"/>
+                            <constraint firstItem="H9t-uw-nzV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2kJ-VO-L5d"/>
+                            <constraint firstItem="niX-id-3No" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AIO-lR-QQj"/>
+                            <constraint firstItem="0IC-m0-EFZ" firstAttribute="top" secondItem="niX-id-3No" secondAttribute="bottom" constant="0.67000000000000004" id="GDI-Yj-4oK"/>
+                            <constraint firstAttribute="trailing" secondItem="aJF-Hn-GJZ" secondAttribute="trailing" id="KUE-F7-LfU"/>
+                            <constraint firstItem="niX-id-3No" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KYp-Zq-OTS"/>
+                            <constraint firstItem="d24-na-h6r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cFL-fv-eY4"/>
+                            <constraint firstItem="aJF-Hn-GJZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cVg-9L-pQN"/>
+                            <constraint firstItem="kpO-tY-QMN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gxz-4d-YyV"/>
+                            <constraint firstItem="aJF-Hn-GJZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mZi-P1-ZNq"/>
+                            <constraint firstItem="kpO-tY-QMN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="sTo-wr-Z9d"/>
+                            <constraint firstItem="d24-na-h6r" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sdy-pb-Hgx"/>
+                            <constraint firstAttribute="bottom" secondItem="aJF-Hn-GJZ" secondAttribute="bottom" id="ugN-is-zCA"/>
+                            <constraint firstItem="0IC-m0-EFZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wiU-hg-Jfd"/>
+                            <constraint firstItem="d24-na-h6r" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zgi-wG-uxj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerButtonsContainer" destination="d24-na-h6r" id="ndY-Hz-QCI"/>
+                        <outlet property="categoryButtonsContainer" destination="H9t-uw-nzV" id="TcZ-tJ-MlX"/>
+                        <outlet property="headerMessage" destination="niX-id-3No" id="td0-qK-oW5"/>
+                        <outlet property="headerSub" destination="0IC-m0-EFZ" id="ieG-Lk-hil"/>
+                        <outlet property="questionText" destination="kpO-tY-QMN" id="wWK-6Q-vhw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.38461538461539" y="2.8436018957345972"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MainBg" width="341.33334350585938" height="606.66668701171875"/>
+    </resources>
+</document>
